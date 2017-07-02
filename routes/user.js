@@ -1,4 +1,5 @@
-'use strict' /*
+//  *****  USER ROUTE   *********
+'use strict' 
 
 var express = require('express');
 //load the user controller located in folder controllers

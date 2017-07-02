@@ -4,7 +4,7 @@
  // loading express app file
  var app = require('./app');
  // port
- var port = process.env.PORT || 8080;
+ var port = process.env.PORT || 3001;
 
 
  //code to load a mongodb db

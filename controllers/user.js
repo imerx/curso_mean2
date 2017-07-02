@@ -1,16 +1,15 @@
-'use strict' /*
-
+'use strict'
 //import module to encrypt passwords
 //var bcrypt = require('bcrypt-nodejs');
 //import model
 //var User = require('../models/user');
 
-	function pruebas(req, res) {
+function pruebas(req, res){
 	    res.status(200).send({
 		   message: 'Probando una accion del controllador del Api Rest con Node y mongo'
 	    });
-
 } 
+/*
 // create a object user   instanced to  model User
 function saveUser(req, res){
    var user = new User();
@@ -33,10 +32,10 @@ function saveUser(req, res){
          res.status(500).send({message: 'Introduce la contrasena'});
 	}
 
-}
+}*/
 
 //export  code 
 module.exports = {
 	pruebas
 	//saveUser
-}  
+};
