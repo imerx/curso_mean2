@@ -11,8 +11,10 @@ var app = express();
 //load the route file for the user controller
 //var user_routes = require('./routes/User');
 
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(bodyParser.json());	
+// parse application/x-www-form-urlencoded 
+app.use(bodyParser.urlencoded({ extended: false }))
+// parse application/json 
+app.use(bodyParser.json())
 
 //  ********  load headers  ***********
 
@@ -20,10 +22,11 @@ app.use(bodyParser.json());
 //we load the configured route  on Api 
 //app.use('/api', user_routes);
 
-//test
-//app.get('/pruebas', function(req, res){
-//res.status(200).send({message: "Bienvenido al curso"});
-//
+ /*   test HTTP server on port
+app.get('/pruebas', function(req, res){
+res.status(200).send({message: "Bienvenido al curso"});
+});  */
+
 
 
 module.exports = app;

@@ -1,4 +1,4 @@
-'use strict'/*
+'use strict'
 
 // create model schema  in the song user
 
@@ -9,7 +9,7 @@ var SongSchema = Schema({
 	number: String,
 	name: String,
 	duration: String,
-	fiel: String,
+	file: String,
 	album: { type: Schema.ObjectId, ref: 'Album'} // search  for AlbumId located in Album
 });
 // create a model user using  the Schema (UserSchema)
