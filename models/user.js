@@ -10,7 +10,7 @@ var UserSchema = Schema({
 	surname: String,
 	email: String,
 	password: String,
-	rol: String,
+	role: String,
 	image: String
 });
 // create a model user using  the Schema (UserSchema)

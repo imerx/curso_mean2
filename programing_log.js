@@ -33,8 +33,7 @@ load Express, bodyParser, ficheros de ruta, crear servidor
 
 
 //creamos modelo de la base de datos 
-//creamos controllers
-//creamos rutas y rutas base
+//creamos controllers  en folder controller (user.js) //creamos rutas en folder routes  y rutas base
 
 'use strict' 
 
@@ -42,39 +41,5 @@ load Express, bodyParser, ficheros de ruta, crear servidor
 //var bcrypt = require('bcrypt-nodejs');
 //import model
 //var User = require('../models/user');
-
-	function pruebas(req, res) {
-	    res.status(200).send({
-		   message: 'Probando una accion del controllador del Api Rest con Node y mongo'
-	    });
-
-} 
-// create a object user   instanced to  model User
-function saveUser(req, res){
-   var user = new User();
-
-// code receive a post params from body 
-    var params = req.body;
-
-     console.log(params);
-
-	//save params in variables
-	user.name = params.name;
-	user.surname = params.surname;
-	user.email = params.email;
-	user.role = 'ROLE_USER';
-	user.image = 'null';
-
-	if (params.password){
-		//encrypt password
-	    }else{
-         res.status(500).send({message: 'Introduce la contrasena'});
-	}
-
-}
-
-//export  code 
-module.exports = {
-	pruebas
-	//saveUser
-}  
+//create and test a controller actionand routes
+//create user controller action
