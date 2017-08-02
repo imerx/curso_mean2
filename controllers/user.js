@@ -7,9 +7,7 @@ var User = require('../models/user');
 var jwt = require('../services/jwt');
 
 function pruebas(req, res) {
- res.status(200).send({
-  message: 'Probando una accion del controllador del Api Rest con Node y mongo'
- });
+ res.status(200).send({  message: 'Probando una accion del controllador del Api Rest con Node y mongo' });
 }
 /*
 create a object user   instanced to  model User, receive params from post  action,

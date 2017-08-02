@@ -5,7 +5,7 @@ var jwt = require('jwt-simple');
 var moment = require('moment');
 var secret = 'clave_secreta_curso';
 
-//create a method to save user infor  inside a hash 
+//create a method to save user info inside a hash 
 exports.createToken = function(user){
 	var payload = {
 		sub: user._id,

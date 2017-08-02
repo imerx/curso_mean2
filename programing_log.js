@@ -43,3 +43,11 @@ load Express, bodyParser, ficheros de ruta, crear servidor
 //var User = require('../models/user');
 //create and test a controller actionand routes
 //create user controller action
+//use error.status(200)//todo ha hido correctamente
+(400)// un recurso o existe
+(500)//error en el servidor
+//runing controller,routes,user model and password validation
+//crear metodo de login  y crear un token
+//crear midleware
+
+//midleware, se ejecuta antes del controlador
